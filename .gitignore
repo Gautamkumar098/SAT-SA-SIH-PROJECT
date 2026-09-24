@@ -2,6 +2,7 @@
 backend/.env
 backend/.venv/
 backend/__pycache__/
+backend/sat_sa.db
 *.pyc
 
 # Frontend
@@ -12,7 +13,3 @@ frontend/node_modules/
 .env
 .env.*
 !.env.example
-
-# General
-__pycache__/
-*.py[cod]
