@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "pipeline_id": "SAT-SA-v1",
+    "run_id": "5a899a72-cf5e-4248-ab0e-de9c80cd3e68",
+    "timestamp": "2026-09-19 12:31:25",
+    "config_version": "1.0.0"
+  },
+  "summary": {
+    "total_findings": 265,
+    "entities": 5,
+    "priority_flags": 0,
+    "cases_review": 160
+  },
+  "entities": [
+    {
+      "id": "E3",
+      "score": 66.1,
+      "peer": "finance_medium",
+      "percentile": "83th",
+      "findings": 76
+    },
+    {
+      "id": "E5",
+      "score": 44.2,
+      "peer": "finance_medium",
+      "percentile": "50th",
+      "findings": 56
+    },
+    {
+      "id": "E4",
+      "score": 36.1,
+      "peer": "finance_medium",
+      "percentile": "17th",
+      "findings": 39
+    },
+    {
+      "id": "E2",
+      "score": 32.9,
+      "peer": "energy_large",
+      "percentile": "75th",
+      "findings": 38
+    },
+    {
+      "id": "E1",
+      "score": 29.4,
+      "peer": "energy_large",
+      "percentile": "25th",
+      "findings": 56
+    }
+  ]
+}

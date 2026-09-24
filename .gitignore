@@ -1,0 +1,18 @@
+# Backend
+backend/.env
+backend/.venv/
+backend/__pycache__/
+*.pyc
+
+# Frontend
+frontend/.env
+frontend/node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# General
+__pycache__/
+*.py[cod]

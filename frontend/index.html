@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>SAT-SA | Supervisory Analytics Tool</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">S</div>
+        <div>
+          <div class="brand-name">SAT-SA</div>
+          <div class="brand-sub">Supervisory Analytics</div>
+        </div>
+      </div>
+
+      <div class="offline-pill"><span></span> AIR-GAPPED MODE</div>
+
+      <nav id="nav">
+        <button class="nav-item active" data-page="dashboard">Overview</button>
+        <button class="nav-item" data-page="ingestion">Ingestion</button>
+        <button class="nav-item" data-page="analytics">Analytics Engines</button>
+        <button class="nav-item" data-page="entities">Entities</button>
+        <button class="nav-item" data-page="cases">Case Priority Queue</button>
+        <button class="nav-item" data-page="findings">Findings</button>
+        <button class="nav-item" data-page="evidence">Evidence Graph</button>
+        <button class="nav-item" data-page="assessment">Assessment Report</button>
+        <button class="nav-item" data-page="chat">AI Explainer</button>
+        <button class="nav-item" data-page="architecture">Architecture</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="version">SAT-SA v1.0.0</div>
+        <div class="run-id" id="sideRunId">Demo run</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">SUPERVISORY ANALYTICS TOOL</div>
+          <h1 id="pageTitle">Supervisory Dashboard</h1>
+        </div>
+        <div class="top-actions">
+          <span class="status-dot"></span>
+          <span class="status-text">Backend / Local</span>
+          <!-- <button class="icon-btn" id="themeBtn" title="Toggle theme">◐</button> -->
+          <button class="btn secondary" id="exportBtn">Export JSON</button>
+          <button class="btn primary" id="reportBtn">Assessment Report</button>
+        </div>
+      </header>
+
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+
+  <div class="modal hidden" id="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <input type="file" id="fileInput" accept=".csv,.json,.txt" multiple hidden />
+  <script src="app.js"></script>
+</body>
+</html>
