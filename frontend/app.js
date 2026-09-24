@@ -327,7 +327,7 @@ async function handleFiles(files){
   } catch(e) {
     uploadedFiles = files.map(f=>({name:f.name,type:f.name.split(".").pop().toUpperCase(),rows:0}));
     render("ingestion");
-    openModal(`<div class="eyebrow">BACKEND CONNECTION</div><h2>Upload failed</h2><p>${esc(e.message)}</p><div class="callout">Start the SAT-SA backend with <code>run.bat</code> and open <strong>http://127.0.0.1:8000</strong>.</div>`);
+    openModal(`<div class="eyebrow">BACKEND CONNECTION</div><h2>Upload failed</h2><p>${esc(e.message)}</p><div class="callout">Start the SAT-SA backend with <code>run.bat</code> and open <strong>https://sat-sa-sih-project.onrender.com</strong>.</div>`);
   }
 }
 
