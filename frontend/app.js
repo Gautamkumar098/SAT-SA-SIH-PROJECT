@@ -78,7 +78,7 @@ const badge = s => `<span class="badge ${String(s).toLowerCase()}">${esc(s)}</sp
 
 function setTitle(t){ $("#pageTitle").textContent=t; }
 function nav(page){
-  // $$(".nav-item").forEach(b=>b.classList.toggle("active",b.dataset.page===page));
+  $$(".nav-item").forEach(b=>b.classList.toggle("active",b.dataset.page===page));
   const titles={dashboard:"Supervisory Dashboard",ingestion:"Data Ingestion & Validation",analytics:"Analytics Engines",entities:"Entity Benchmarking",cases:"Case Priority Queue",findings:"Findings Explorer",evidence:"Explainability & Evidence Graph",assessment:"Assessment Report",architecture:"SAT-SA Architecture",chat:"AI Explainer"};
   setTitle(titles[page]||"SAT-SA");
   render(page);
