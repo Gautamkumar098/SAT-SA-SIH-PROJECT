@@ -1,4 +1,4 @@
-const API_BASE = "";
+const API_BASE = "https://sat-sa-sih-project.onrender.com";
 const DEMO = {
   meta:{pipeline_id:"SAT-SA-v1",run_id:"5a899a72-cf5e-4248-ab0e-de9c80cd3e68",timestamp:"2026-09-19 12:31:25",config_version:"1.0.0",duration:"0.1s"},
   summary:{total_findings:265,entities:5,priority_flags:0,cases_review:160},
